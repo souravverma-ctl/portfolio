@@ -12,7 +12,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/boxlayout.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/stacked-cards.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/jquery.animatedheadline.css" />
-    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -748,6 +747,7 @@
     <!-- wrapper end -->
 
     <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.animatedheadline.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="http://slimhamdi.net/moscow/demos/js/boxlayout.js"></script>
@@ -779,65 +779,10 @@
                 });
             }
 
-            // PORTFOLIO DIRECTION AWARE HOVER EFFECT
-            // var item = $("#th-thumbs-items>div");
-            // var elementsLength = item.length;
-            // for (var i = 0; i < elementsLength; i++) {
-            // 	$(item[i]).hoverdir();
-            // }
-
-            // BOX LAYOUT
-            //Boxlayout.init();
-
             // REMOVE # FROM URL
             $("a[href='#']").on("click", (function (e) {
                 e.preventDefault();
             }));
-
-            // about();
-            // function about() {
-            //     var x = document.getElementById('about');
-            //     var y = document.getElementById('about-detail');
-            //     var closePortfoli1 = document.querySelector('.bl-icon-close1');
-
-            //     x.onclick = function () {
-            //         y.classList.add('open');
-            //     }
-
-            //     closePortfoli1.onclick = function () {
-            //         y.classList.remove('open');
-            //     }
-            // }
-
-            // portfoilo();
-            // function portfoilo() {
-            //     var x = document.getElementById('myportfolio');
-            //     var y = document.getElementById('myportfolio-detail');
-            //     var closePortfoli2 = document.querySelector('.bl-icon-close2');
-
-            //     x.onclick = function () {
-            //         y.classList.add('open');
-            //     }
-
-            //     closePortfoli2.onclick = function () {
-            //         y.classList.remove('open');
-            //     }
-            // }
-
-            // contact();
-            // function contact() {
-            //     var x = document.getElementById('contact');
-            //     var y = document.getElementById('contact-detail');
-            //     var closePortfoli3 = document.querySelector('.bl-icon-close3');
-
-            //     x.onclick = function () {
-            //         y.classList.add('open');
-            //     }
-
-            //     closePortfoli3.onclick = function (e) {
-            //         y.classList.remove('open');
-            //     }
-            // }
 
         });
 
