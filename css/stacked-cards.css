@@ -1,0 +1,164 @@
+.portfolio-cards {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 47px;
+    max-width: 645px;
+}
+
+.portfolio-card {
+    padding: 0;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s ease transform;
+    cursor: pointer;
+    border: 1px solid #333;
+}
+
+.portfolio-card.portfolio-card-0 {
+    position: relative;
+    z-index: 3;
+}
+
+.portfolio-card-header {
+    padding: 28px;
+    text-align: center;
+    background: #151515;
+    border-bottom: 1px solid #333;
+}
+
+.portfolio-card-header h4 {
+    color: #ffb400;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.portfolio-card-header h4 .fa {
+    margin-right:4px;
+}
+
+.portfolio-card-body {
+    background: #222;
+    padding: 0;
+}
+
+.portfolio-card-body {
+    padding: 24px;
+    display: flex;
+    flex-flow: column;
+}
+
+.portfoli-card-content:not(:first-child) {
+    margin-top: 1.5em;
+}
+
+.portfoli-card-content .profile-name h4,
+.portfoli-card-content .date {
+    margin-bottom: 0.5em;
+}
+
+.portfoli-card-content .profile-name h4 {
+    font-size: 1em;
+    font-weight: 500;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.portfoli-card-content .profile-name h4 span {
+    font-weight: 300;
+}
+
+.portfoli-card-content .date {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+.portfoli-card-content .profile-description {
+    font-size: 0.84em;
+    font-weight: 400;
+    color: #eee;
+}
+
+.profile-description.skill-rating {
+    margin-bottom: 0 !important;
+}
+
+.profile-description.skill-rating p .fa {
+    color: #ffb400;
+}
+
+
+.portfoli-card-content:not(:last-child) .profile-description {
+    margin-bottom: 1.5em;
+}
+
+.portfolio-skiils-ratings {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-skiils-ratings .portfolio-skills {
+    flex: 1;
+}
+
+.seprator {
+    height: 2px;
+    width: 70px;
+    background: #ffb400;
+    display: inline-block;
+}
+
+@media only screen and (min-width:860px) {
+    .portfolio-card.portfolio-card-1 {
+        z-index: 2;
+        transform: scale(0.92) translate(0, -52px);
+    }
+
+    .portfolio-card.portfolio-card-2 {
+        transform: scale(0.84) translate(0, -108px);
+    }
+
+    .portfolio-card.front {
+        transform: scale(1) translate(0, 0);
+        z-index: 2;
+        cursor: default;
+    }
+
+    .portfolio-card.back {
+        transform: scale(0.9) translate(0, -56px);
+        z-index: 1;
+    }
+
+    .portfolio-card.back-back {
+        transform: scale(0.8) translate(0, -118px);
+        z-index: 0;
+    }
+
+    .portfolio-card.portfolio-card-1:hover {
+        transform: scale(0.92) translate(0, -62px);
+    }
+
+    .portfolio-card-2:hover {
+        transform: scale(0.84) translate(0, -122px);
+    }
+
+    .portfolio-card.front:hover {
+        transform: scale(1) translate(0, 0);
+    }
+
+    .portfolio-card.back:hover {
+        transform: scale(0.9) translate(0, -68px);
+    }
+
+    .portfolio-card.back-back:hover {
+        transform: scale(0.8) translate(0, -132px);
+    }
+
+    .portfolio-card.portfolio-card-1, 
+    .portfolio-card.portfolio-card-2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
