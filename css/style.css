@@ -127,19 +127,25 @@ body {
 }
 
 .main-picture-image {
-    background-image: url('../images/men.jpg');
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/men.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width:100%;
+    background-position: 46% 16%;
+    background-size: 332%;
+    border-radius: 50%;
+    margin: 80px auto 20px;
 }
 
 .main-picture { 
     height: calc(100vh - 2.50rem);
 }
 
-.main-picture { flex-basis: 33.3333333333% }
-.main-content { flex-basis: 66.6666666666% }
+.main-picture { 
+    flex-basis: 20%;
+    justify-content: center;
+}
+.main-content { flex-basis:80% }
 
 .portfolio-section {
     display: -webkit-box;
@@ -390,6 +396,18 @@ body {
     font-weight: 500;
     min-width: 6rem;
     display: inline-block;
+    position: relative;
+    margin-right: 12px;
+}
+
+.info-detail .info-detail-col ul li span.first-label:after {
+    content: ':';
+    position: absolute;
+    right: 0;
+}
+
+.main-picture .info-detail .info-detail-col {
+    width:100%;
 }
 
 /* custom button */
@@ -426,7 +444,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
-    align-items: center;
+    /* align-items: center; */
     padding: 3.5em 0;
 }
 

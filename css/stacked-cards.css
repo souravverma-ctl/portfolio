@@ -1,7 +1,7 @@
 .portfolio-cards {
     position: relative;
     margin: 0 auto;
-    margin-top: 47px;
+    /* margin-top: 47px; */
     max-width: 645px;
 }
 
@@ -11,6 +11,11 @@
     transition: .3s ease transform;
     cursor: pointer;
     border: 1px solid #333;
+    display: none;
+}
+
+.portfolio-card.is-active {
+    display: block;
 }
 
 .portfolio-card.portfolio-card-0 {
@@ -19,7 +24,7 @@
 }
 
 .portfolio-card-header {
-    padding: 28px;
+    padding: 18px;
     text-align: center;
     background: #151515;
     border-bottom: 1px solid #333;
@@ -29,7 +34,7 @@
     color: #ffb400;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1;
 }
 
@@ -46,10 +51,12 @@
     padding: 24px;
     display: flex;
     flex-flow: column;
+    overflow-y: auto;
+    max-height: 385px;
 }
 
 .portfoli-card-content:not(:first-child) {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 .portfoli-card-content .profile-name h4,
@@ -89,7 +96,7 @@
 
 
 .portfoli-card-content:not(:last-child) .profile-description {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 .portfolio-skiils-ratings {
@@ -108,14 +115,14 @@
     display: inline-block;
 }
 
-@media only screen and (min-width:860px) {
+/* @media only screen and (min-width:860px) {
     .portfolio-card.portfolio-card-1 {
         z-index: 2;
         transform: scale(0.92) translate(0, -52px);
     }
 
     .portfolio-card.portfolio-card-2 {
-        transform: scale(0.84) translate(0, -108px);
+        transform: scale(0.84) translate(0, -100px);
     }
 
     .portfolio-card.front {
@@ -125,21 +132,21 @@
     }
 
     .portfolio-card.back {
-        transform: scale(0.9) translate(0, -56px);
+        transform: scale(0.9) translate(0, -55px);
         z-index: 1;
     }
 
     .portfolio-card.back-back {
-        transform: scale(0.8) translate(0, -118px);
+        transform: scale(0.8) translate(0, -119px);
         z-index: 0;
     }
 
     .portfolio-card.portfolio-card-1:hover {
-        transform: scale(0.92) translate(0, -62px);
+        transform: scale(0.92) translate(0, -75px);
     }
 
     .portfolio-card-2:hover {
-        transform: scale(0.84) translate(0, -122px);
+        transform: scale(0.84) translate(0, -130px);
     }
 
     .portfolio-card.front:hover {
@@ -147,7 +154,7 @@
     }
 
     .portfolio-card.back:hover {
-        transform: scale(0.9) translate(0, -68px);
+        transform: scale(0.9) translate(0, -83px);
     }
 
     .portfolio-card.back-back:hover {
@@ -161,4 +168,4 @@
         top: 0;
         width: 100%;
     }
-}
+} */
